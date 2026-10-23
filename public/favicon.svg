@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <radialGradient id="bgGrad" cx="50%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#2a1a08" />
+      <stop offset="60%" stop-color="#140d04" />
+      <stop offset="100%" stop-color="#080502" />
+    </radialGradient>
+
+    <!-- Gold Gradients -->
+    <linearGradient id="goldGleam" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fff6cc" />
+      <stop offset="25%" stop-color="#ffd700" />
+      <stop offset="55%" stop-color="#d4af37" />
+      <stop offset="85%" stop-color="#aa7c11" />
+      <stop offset="100%" stop-color="#6e4f08" />
+    </linearGradient>
+
+    <linearGradient id="sapphireGem" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#7bebf2" />
+      <stop offset="30%" stop-color="#00c8e6" />
+      <stop offset="70%" stop-color="#0866b8" />
+      <stop offset="100%" stop-color="#042a66" />
+    </linearGradient>
+
+    <filter id="royalGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="10" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Circular Badge Base -->
+  <circle cx="256" cy="256" r="246" fill="url(#bgGrad)" stroke="url(#goldGleam)" stroke-width="12" />
+  <circle cx="256" cy="256" r="230" fill="none" stroke="#d4af37" stroke-width="2" stroke-dasharray="6,6" opacity="0.7" />
+
+  <!-- Outer Egyptian Sun Rays -->
+  <g opacity="0.35">
+    <circle cx="256" cy="256" r="215" fill="none" stroke="#ffd700" stroke-width="1" />
+    <line x1="256" y1="20" x2="256" y2="55" stroke="#ffd700" stroke-width="3" />
+    <line x1="256" y1="457" x2="256" y2="492" stroke="#ffd700" stroke-width="3" />
+    <line x1="20" y1="256" x2="55" y2="256" stroke="#ffd700" stroke-width="3" />
+    <line x1="457" y1="256" x2="492" y2="256" stroke="#ffd700" stroke-width="3" />
+    <line x1="89" y1="89" x2="114" y2="114" stroke="#ffd700" stroke-width="3" />
+    <line x1="398" y1="398" x2="423" y2="423" stroke="#ffd700" stroke-width="3" />
+    <line x1="89" y1="423" x2="114" y2="398" stroke="#ffd700" stroke-width="3" />
+    <line x1="398" y1="114" x2="423" y2="89" stroke="#ffd700" stroke-width="3" />
+  </g>
+
+  <!-- Winged Sun Scarab Crest & Pectoral Collar Base -->
+  <path d="M 120 380 Q 256 460 392 380 Q 340 430 256 440 Q 172 430 120 380 Z" fill="url(#goldGleam)" filter="url(#royalGlow)" />
+  <path d="M 140 370 Q 256 430 372 370 Q 320 405 256 412 Q 192 405 140 370 Z" fill="#00c8e6" opacity="0.8" />
+
+  <!-- Queen Avatara Lotus Diadem & Crown -->
+  <!-- Back Lotus Sunburst Rays -->
+  <g fill="url(#goldGleam)">
+    <polygon points="256,70 240,190 272,190" />
+    <polygon points="205,85 200,195 232,195" />
+    <polygon points="307,85 280,195 312,195" />
+    <polygon points="160,115 170,205 200,205" />
+    <polygon points="352,115 312,205 342,205" />
+    <polygon points="125,160 145,215 175,215" />
+    <polygon points="387,160 337,215 367,215" />
+  </g>
+
+  <!-- Golden Crown Diadem Base Band -->
+  <path d="M 110 260 Q 256 295 402 260 L 412 220 Q 256 250 100 220 Z" fill="url(#goldGleam)" stroke="#5c3f06" stroke-width="3" />
+
+  <!-- Triangles on Diadem -->
+  <g fill="#0866b8">
+    <polygon points="140,246 155,225 170,246" />
+    <polygon points="190,250 205,227 220,250" />
+    <polygon points="241,253 256,229 271,253" />
+    <polygon points="292,250 307,227 322,250" />
+    <polygon points="342,246 357,225 372,246" />
+  </g>
+
+  <!-- Central Lotus Spire Peak -->
+  <path d="M 256 125 C 275 160 285 190 256 225 C 227 190 237 160 256 125 Z" fill="url(#goldGleam)" stroke="#ffe57f" stroke-width="2" />
+  <circle cx="256" cy="115" r="10" fill="url(#goldGleam)" />
+  <circle cx="256" cy="98" r="6" fill="#ffd700" />
+
+  <!-- Majestic Royal Sapphire Gem (Centerpiece) -->
+  <ellipse cx="256" cy="195" rx="22" ry="32" fill="url(#sapphireGem)" stroke="url(#goldGleam)" stroke-width="5" filter="url(#royalGlow)" />
+  <ellipse cx="250" cy="183" rx="6" ry="10" fill="#ffffff" opacity="0.75" />
+
+  <!-- Ankh Symbol of Life Inside Heart -->
+  <g fill="url(#goldGleam)" transform="translate(256, 335) scale(0.65)">
+    <!-- Loop -->
+    <ellipse cx="0" cy="-45" rx="25" ry="32" fill="none" stroke="url(#goldGleam)" stroke-width="12" />
+    <!-- Horizontal Crossbar -->
+    <rect x="-42" y="-14" width="84" height="12" rx="4" fill="url(#goldGleam)" />
+    <!-- Vertical Stem -->
+    <rect x="-7" y="-14" width="14" height="75" rx="3" fill="url(#goldGleam)" />
+  </g>
+
+  <!-- Bottom Arch Text: KARNAK -->
+  <text x="256" y="475" text-anchor="middle" font-family="'Cinzel', 'Trajan Pro', Georgia, serif" font-weight="900" font-size="28" letter-spacing="8" fill="url(#goldGleam)">QUEEN AVATARA</text>
+</svg>

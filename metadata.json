@@ -1,0 +1,6 @@
+{
+  "name": "Queen : Tomb of Karnak",
+  "description": "3D Tomb Raider style Egyptian maze adventure in Karnak Temple. Guide Queen Avatara through ancient traps and puzzle chambers to claim the Pharaoh's Treasure.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

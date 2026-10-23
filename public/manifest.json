@@ -1,0 +1,18 @@
+{
+  "name": "Queen Avatara: Tomb of Karnak",
+  "short_name": "Queen Avatara",
+  "description": "3D Tomb Raider style Egyptian maze adventure in Karnak Temple. Guide Queen Avatara through ancient traps and puzzle chambers.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0a0704",
+  "theme_color": "#d4af37",
+  "orientation": "landscape-primary",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "192x192 512x512",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
