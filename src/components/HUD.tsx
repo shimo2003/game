@@ -16,6 +16,7 @@ import {
   Crown,
   Glasses,
   BookOpen,
+  Download,
 } from 'lucide-react';
 import { PlayerStats } from '../types/game';
 import { PlayerInventory } from '../types/store';
@@ -37,7 +38,7 @@ interface HUDProps {
   onActivateCloak: () => void;
   onActivateSolar: () => void;
   onActivateMagnet: () => void;
-  onOpenHelpAndTutorial?: (tab?: 'tutorial' | 'controls' | 'riddles' | 'glasses') => void;
+  onOpenHelpAndTutorial?: (tab?: 'tutorial' | 'controls' | 'riddles' | 'glasses' | 'files') => void;
   showMap: boolean;
 }
 
@@ -328,6 +329,18 @@ export const HUD: React.FC<HUDProps> = React.memo(({
               <span className="hidden md:inline">Guide</span>
             </button>
           )}
+
+          {/* Quick ZIP Download Link */}
+          <a
+            href="/queen-avatara-tomb-of-karnak.zip"
+            download="queen-avatara-tomb-of-karnak.zip"
+            aria-label="Download Project ZIP"
+            title="Download Complete Project ZIP (7.4 MB)"
+            className="flex h-10 px-2.5 items-center gap-1.5 justify-center rounded-xl border border-emerald-500/60 bg-emerald-950/70 text-xs font-bold text-emerald-300 hover:bg-emerald-900/80 hover:text-white transition-all shadow-lg active:scale-95"
+          >
+            <Download className="h-4 w-4 text-emerald-400" />
+            <span className="hidden lg:inline">ZIP</span>
+          </a>
 
           {/* Sound Toggle */}
           <button

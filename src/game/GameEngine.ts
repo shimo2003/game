@@ -26,7 +26,7 @@ export interface GameEngineCallbacks {
   onToggleMiniMap?: () => void;
   onNearbyCarvingChange?: (carving: WallCarving | null) => void;
   onInspectCarving?: (carving: WallCarving) => void;
-  onOpenHelpAndTutorial?: (initialTab?: 'tutorial' | 'controls' | 'riddles' | 'glasses') => void;
+  onOpenHelpAndTutorial?: (initialTab?: 'tutorial' | 'controls' | 'riddles' | 'glasses' | 'files') => void;
   onTimersChange?: (cloakSeconds: number, magnetSeconds: number) => void;
 }
 

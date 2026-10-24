@@ -34,7 +34,7 @@ interface ControlsOverlayProps {
   onVirtualMove: (vx: number, vy: number) => void;
   onReset: () => void;
   nearbyCarving?: WallCarving | null;
-  onOpenHelpAndTutorial: (tab?: 'tutorial' | 'controls' | 'riddles' | 'glasses') => void;
+  onOpenHelpAndTutorial: (tab?: 'tutorial' | 'controls' | 'riddles' | 'glasses' | 'files') => void;
 }
 
 export const ControlsOverlay: React.FC<ControlsOverlayProps> = React.memo(({

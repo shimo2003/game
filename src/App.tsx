@@ -12,7 +12,7 @@ import { GameOverModal } from './components/GameOverModal';
 import { StoreModal } from './components/StoreModal';
 import { PaymentModal } from './components/PaymentModal';
 import { RiddleModal } from './components/RiddleModal';
-import { HelpAndTutorialModal } from './components/HelpAndTutorialModal';
+import { HelpAndTutorialModal, HelpTabType } from './components/HelpAndTutorialModal';
 import { WallCarving } from './game/riddles';
 import { sound } from './audio/soundSystem';
 
@@ -23,7 +23,7 @@ export default function App() {
   const [nearbyCarving, setNearbyCarving] = useState<WallCarving | null>(null);
   const [activeRiddleCarving, setActiveRiddleCarving] = useState<WallCarving | null>(null);
   const [showHelpModal, setShowHelpModal] = useState(false);
-  const [helpModalTab, setHelpModalTab] = useState<'tutorial' | 'controls' | 'riddles' | 'glasses'>('tutorial');
+  const [helpModalTab, setHelpModalTab] = useState<HelpTabType>('tutorial');
 
   const [stats, setStats] = useState<PlayerStats>({
     health: 100,
@@ -225,7 +225,7 @@ export default function App() {
   );
 
   const handleOpenHelpAndTutorial = useCallback(
-    (tab: 'tutorial' | 'controls' | 'riddles' | 'glasses' = 'tutorial') => {
+    (tab: HelpTabType = 'tutorial') => {
       setHelpModalTab(tab);
       setShowHelpModal(true);
     },
